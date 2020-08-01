@@ -1,7 +1,9 @@
 (ns http-client-template.core
-  (:gen-class))
+  (:require [http-client-template.datasource.json-placeholder.datasource :as datasource]))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main [& args]
+  ;; (prn (datasource/create {:user-id 5 :title "hello world" :body "sup"}))
+  (datasource/create {:user-id 5 :title "hello world" :body "sup"}))
+
+(-main)
+
