@@ -1,0 +1,11 @@
+{:env      :dev
+
+ :logger   {:log-debug?   true
+            :log-time?    true
+            :time-pattern "dd/MM/yyyy|HH:mm:ss"
+            :save-logs?   false
+            :output-file "logs/dev.logs"}
+
+ :http     {:default-retries 3
+            :log-success     true
+            :log-error       true}}

@@ -1,0 +1,11 @@
+{:env      :pro
+
+ :logger   {:log-debug?    false
+            :log-time?     true
+            :time-pattern "dd/MM/yyyy|HH:mm:ss"
+            :save-logs?   true
+            :output-file  "logs/pro.log"}
+
+ :http     {:default-retries 3
+            :log-success     false
+            :log-errors       true}}
