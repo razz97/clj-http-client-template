@@ -37,7 +37,7 @@
            (log :err (build-err-msg req err)) err))))
 
 (defn try-exec-times [req n]
-  (loop [i n]
+  (loop [i (dec n)]
     (let [res (try-exec req) success? (not (:error res))]
       (if (or (zero? i) success?)
         res

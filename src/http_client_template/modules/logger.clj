@@ -22,9 +22,9 @@
 
 ;; This should be the interface
 
-(def err (partial exec-log "ERROR"))
-(def info (partial exec-log "INFO"))
-(def debug (if (:log-debug? config) (partial exec-log "DEBUG") #()))
+(def err (partial log "ERROR"))
+(def info (partial log "INFO"))
+(def debug (if (:log-debug? config) (partial log "DEBUG") #()))
 
 (defn logf-for-context
   [context]  (fn [level msg]
